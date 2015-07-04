@@ -21,6 +21,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "claide"
   spec.add_dependency "hashie"
   spec.add_dependency "forecast_io"
+  spec.add_dependency "geokit"
 
   spec.add_development_dependency "bundler", "~> 1.9"
   spec.add_development_dependency "rake", "~> 10.0"
