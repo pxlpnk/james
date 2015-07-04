@@ -1,0 +1,22 @@
+#!/usr/bin/env ruby
+
+require 'rubygems'
+require "bundler/setup"
+require "james"
+require "james/config"
+require 'james/services/forecast_io_service'
+
+require "awesome_print"
+
+require 'pry'
+
+puts <<-CONSOLE_INFO
+
+    Pry console with app code loaded. What can I do for you?
+CONSOLE_INFO
+
+ap "Loading Settings"
+James::Config.load('ressources/james_file.yml')
+ap James::Config.settings
+
+Pry.start
